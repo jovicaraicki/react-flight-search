@@ -1,0 +1,42 @@
+$main-color: #61dafb;
+$main-text-gray-color: #484848;
+$light-black-color: #a9a9a9;
+$main-black-color: #20232a;
+$main-white-color: #ededed;
+$duration-flight-color: #5676cb;
+
+div.main {
+    margin: 15px;
+    /* font-family: 'Tajawal'; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+$i: -1;
+@for $i from -1 through 1000 {
+  $i: $i + 1;
+  .box-item#{$i} {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background: white;
+    padding: 15px;
+    /* -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.25);
+    // -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.25);
+    // box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.25); */
+  }
+}
+
+.card-title .duration {
+  font-size: 14px;
+  font-weight: 900;
+  color: $duration-flight-color;
+}
+
+.card-title .airline {
+  font-size: 14px;
+  font-weight: 900;
+  color: $main-black-color;
+}

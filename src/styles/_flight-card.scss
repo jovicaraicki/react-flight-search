@@ -1,0 +1,25 @@
+.departure span,
+.arrival span {
+    padding-right: 5px;
+}
+
+.departure span:first-child,
+.arrival span:first-child {
+    font-weight: 600;
+    font-size: 20px;
+    font-variant-caps: all-small-caps;
+}
+
+.departure span:nth-child(2),
+.arrival span:nth-child(2) {
+    font-weight: 1000;
+}
+
+.departure span:nth-child(3),
+.arrival span:nth-child(3) {
+    font-weight: 300;
+}
+
+.card-title {
+    padding: 10px 0;
+}
